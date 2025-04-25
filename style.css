@@ -1,40 +1,52 @@
 * {
     background-color: black;
     color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
-
 
 p {
     font-family: 'Determination', sans-serif;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 html {
     border: 3px solid white;
 }
 
+img {
+    border-radius: 3%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+
 a:link, a:visited {
     color: yellow;
-    text-decoration: none; 
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5), 0 0 15px rgba(255, 255, 0, 0.5);
 }
 
 a:hover {
-    color: yellow; 
-}
-img {
-    border-radius: 5%;
+    color: yellow;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5), 0 0 15px rgba(255, 255, 0, 0.5);
 }
 
-* {
-    -webkit-text-stroke: 1px black;
-}
 a:active {
-    color: yellow; 
+    color: yellow;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5), 0 0 15px rgba(255, 255, 0, 0.5);
 }
+
+img {
+    border-radius: 3%;
+}
+
 i {
     color: lightgray;
+    text-shadow: 0 0 5px rgba(211, 211, 211, 0.5), 0 0 10px rgba(211, 211, 211, 0.5), 0 0 15px rgba(211, 211, 211, 0.5);
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Monster', sans-serif;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 @font-face {
