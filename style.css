@@ -15,8 +15,6 @@ html {
     background-size: cover;
 
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
     position: relative;
 }
 
