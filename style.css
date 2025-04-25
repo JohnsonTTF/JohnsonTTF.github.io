@@ -1,6 +1,6 @@
 /* Set the background of the entire page to black and text color to white */
 * {
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -10,9 +10,9 @@ p {
 }
 
 /* Apply the custom font for headings */
-html {
+/* html {
     border: 3px solid white;
-}
+} */
 
 a:link, a:visited {
     color: yellow;
@@ -33,7 +33,7 @@ a:active {
     color: yellow; /* Optional: Change color when clicked */
 }
 i {
-    color:rgb(163, 163, 163);
+    color:rgb(105, 105, 105);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Monster', sans-serif;
