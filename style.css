@@ -1,7 +1,7 @@
 /* Set the background of the entire page to black and text color to white */
 * {
     background-color: rgb(0, 0, 0);
-    /* color: white; */
+    color: white;
 }
 
 /* Apply the custom font for paragraphs */
@@ -23,7 +23,7 @@ a:hover {
     color: yellow; /* Optional: Change color on hover */
 }
 img {
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 * {
