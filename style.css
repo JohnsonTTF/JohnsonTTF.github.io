@@ -1,6 +1,6 @@
 /* Set the background of the entire page to black and text color to white */
 * {
-    background-color: black;
+    background-color: rgb(121, 121, 121);
     color: white;
 }
 
@@ -22,7 +22,13 @@ a:link, a:visited {
 a:hover {
     color: yellow; /* Optional: Change color on hover */
 }
+img {
+    border-radius: 25%;
+}
 
+* {
+    -webkit-text-stroke: 5px rgb(0, 0, 0); /* Adds a black stroke to all text */
+}
 a:active {
     color: yellow; /* Optional: Change color when clicked */
 }
