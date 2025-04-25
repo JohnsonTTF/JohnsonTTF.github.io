@@ -1,0 +1,26 @@
+/* Set the background of the entire page to black and text color to white */
+* {
+    background-color: black;
+    color: white;
+}
+
+/* Apply the custom font for paragraphs */
+p {
+    font-family: 'Determination', sans-serif;
+}
+
+/* Apply the custom font for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Monster', sans-serif;
+}
+
+/* Ensure custom fonts are loaded */
+@font-face {
+    font-family: 'Determination';
+    src: url('determination.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monster';
+    src: url('monster.otf') format('opentype');
+}
