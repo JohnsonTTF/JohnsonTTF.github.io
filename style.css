@@ -10,7 +10,7 @@ p {
 }
 
 html {
-    border: 5px solid white;
+    border: 0px solid white;
     background: url('background-image.jpg') no-repeat center center fixed;
     background-size: cover;
 
@@ -31,6 +31,7 @@ html::before {
     z-index: -1;
     height: 100%;
 }
+
 
 body {
     width: 1400px;
