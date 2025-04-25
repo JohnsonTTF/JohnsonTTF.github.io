@@ -1,6 +1,6 @@
 /* Set the background of the entire page to black and text color to white */
 * {
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(66, 66, 66);
     color: white;
 }
 
@@ -23,7 +23,7 @@ a:hover {
     color: yellow; /* Optional: Change color on hover */
 }
 img {
-    border-radius: 25%;
+    border-radius: 50%;
 }
 
 * {
@@ -33,7 +33,7 @@ a:active {
     color: yellow; /* Optional: Change color when clicked */
 }
 i {
-    color:rgb(214, 214, 214);
+    color:rgb(163, 163, 163);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Monster', sans-serif;
