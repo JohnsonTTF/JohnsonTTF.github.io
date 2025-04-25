@@ -26,6 +26,9 @@ a:hover {
 a:active {
     color: yellow; /* Optional: Change color when clicked */
 }
+i {
+    color:rgb(162, 162, 162)
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Monster', sans-serif;
 }
