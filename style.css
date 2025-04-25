@@ -18,34 +18,6 @@ html {
     position: relative;
 }
 
-audio {
-    display: none;
-}
-
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    z-index: -1;
-}
-
-body {
-    position: relative;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    z-index: -1;
-}
-
 html::before {
     content: '';
     position: absolute;
