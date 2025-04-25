@@ -10,9 +10,9 @@ p {
 }
 
 /* Apply the custom font for headings */
-/* html {
+html {
     border: 3px solid white;
-} */
+}
 
 a:link, a:visited {
     color: yellow;
