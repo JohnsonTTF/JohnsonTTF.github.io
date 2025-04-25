@@ -11,9 +11,21 @@ p {
 
 /* Apply the custom font for headings */
 html {
-    border: 5px solid white;
+    border: 3px solid white;
 }
 
+a:link, a:visited {
+    color: yellow;
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+a:hover {
+    color: yellow; /* Optional: Change color on hover */
+}
+
+a:active {
+    color: yellow; /* Optional: Change color when clicked */
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Monster', sans-serif;
 }
@@ -27,14 +39,4 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
     font-family: 'Monster';
     src: url('monster.otf') format('opentype');
-}
-
-/* Remove underlines from links */
-a {
-    text-decoration: none;
-}
-
-/* Make text inside <special> tags yellow */
-special {
-    color: yellow;
 }
