@@ -70,8 +70,13 @@ i {
     text-shadow: 0 0 5px rgba(211, 211, 211, 0.5), 0 0 10px rgba(211, 211, 211, 0.5), 0 0 15px rgba(211, 211, 211, 0.5);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5{
     font-family: 'Monster', sans-serif;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+h6 {
+    font-family: 'Determination Comic Sans', sans-serif;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
@@ -84,3 +89,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Monster';
     src: url('monster.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Determination Comic Sans';
+    src: url('comic-sans.TTF') format('opentype');
+}
+
