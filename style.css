@@ -4,10 +4,12 @@
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-p {
+p,h2, h5 {
     font-family: 'Determination', sans-serif;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
+
+
 
 html {
     border: 0px solid white;
@@ -18,18 +20,17 @@ html {
     position: relative;
 }
 
-html::before {
+body::before {
     content: '';
-    position: absolute;
+    position: fixed; /* Ensures the blur stays fixed in place */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
-    background: inherit;
-    filter: blur(5px);
-    z-index: -1;
-    height: 100%;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Explicitly set the background */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    filter: blur(5px); /* Apply the blur effect */
+    z-index: -1; /* Keeps it behind other content */
 }
 
 
@@ -37,16 +38,25 @@ body {
     width: 1400px;
     height: 600px;
     margin: 15 auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 img {
     border-radius: 3%;
 }
 
+b.underverse {
+    color: rgb(255, 77, 255);
+    text-shadow: 0 0 5px rgba(230, 0, 255, 0.496), 0 0 10px rgba(230, 0, 255, 0.5), 0 0 15px rgba(230, 0, 255, 0.5);
+}
+
+
+b.undertale {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+}
 a:link, a:visited {
     color: yellow;
-    text-decoration: none;
     text-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5), 0 0 15px rgba(255, 255, 0, 0.5);
 }
 
@@ -65,7 +75,8 @@ i {
     text-shadow: 0 0 5px rgba(211, 211, 211, 0.5), 0 0 10px rgba(211, 211, 211, 0.5), 0 0 15px rgba(211, 211, 211, 0.5);
 }
 
-h1, h2, h3, h4, h5{
+h1 {
+    font-weight: normal; /* Removes bold styling */
     font-family: 'Monster', sans-serif;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
 }
@@ -73,6 +84,8 @@ h1, h2, h3, h4, h5{
 h6 {
     font-family: 'Determination Comic Sans', sans-serif;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+    letter-spacing: 5px;
+    font-weight: normal; /* Removes bold styling */
 }
 
 @font-face {
