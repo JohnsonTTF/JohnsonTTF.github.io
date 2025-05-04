@@ -1,0 +1,311 @@
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="tab-icon.png">
+        <title>Episodes</title>
+        <link rel="stylesheet" type="text/css" href="assign2style.css">
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 5em; 
+                margin-bottom: 5px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 3em; 
+            }
+            h3 {
+                text-align: left;
+                font-size: 3em; 
+            }
+            h5 {
+                text-align: left;
+                font-size: 2em;
+            }
+        </style>
+  
+    </head>
+    <body>
+        <div style="text-align: left; margin-top: -500px; margin-bottom: -30px; background-color: rgba(0, 0, 0, 0.555); outline: 3px solid white; margin-top: 90px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); border-radius: 10px; ">
+        <script>
+            function enterPage(file) {
+            window.location.href = file;
+            }
+        </script>
+        
+        <button 
+        onclick="enterPage('index.html')" 
+        style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+        onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+        onmouseout="this.style.outlineColor='white'; this.style.color='white';">
+        Home</button>
+
+        <button 
+        onclick="enterPage('assign2.html')" 
+        style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+        onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+        onmouseout="this.style.outlineColor='white'; this.style.color='white';">
+        Episodes</button>
+
+        <p style="margin-top: -5px;">
+            <br>
+        </p>
+        </div>
+        
+
+        <!-- <h1 style="text-align: center; margin-bottom: -30px; margin-top: 40px;"> -->
+            <h1>
+            undeRverse
+        </h1>
+        <h2 style="margin-bottom: -70px; margin-top: -10px;">
+           - EPISODES -
+        </h2>
+        <div style="background-color: rgba(0, 0, 0, 0.555); outline: 3px solid white; margin-top: 90px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); border-radius: 10px; padding-top: -60px;">
+            <script>
+                function toggleSeason(season) {
+                    const season1Episodes = document.querySelector('.season1-episodes');
+                    const season2Episodes = document.querySelector('.season2-episodes');
+                    season1Episodes.style.display = 'block';
+                    season2Episodes.style.display = 'none';
+                    if (season === 'season1') {
+                        season1Episodes.style.display = 'block';
+                        season2Episodes.style.display = 'none';
+                    } else if (season === 'season2') {
+                        season1Episodes.style.display = 'none';
+                        season2Episodes.style.display = 'block';
+                    }
+                }
+            </script>
+
+            <div style="text-align: left; margin-top: 20px; margin-bottom: -30px;">
+                <button 
+                    onclick="toggleSeason('season1')" 
+                    style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+                    onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+                    onmouseout="this.style.outlineColor='white'; this.style.color='white';"
+                >
+                    Season 1
+                </button>
+                <button 
+                    onclick="toggleSeason('season2')" 
+                    style="padding: 10px 20px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+                    onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+                    onmouseout="this.style.outlineColor='white'; this.style.color='white';"
+                >
+                    Season 2
+                </button>
+            </div>
+
+            <script>
+                // Initially show Season 1 and hide Season 2
+                document.querySelector('.season1-episodes').style.display = 'block';
+                document.querySelector('.season2-episodes').style.display = 'none';
+            </script>
+
+            <div class="season1-episodes" style="display: block;">
+                <h3 style="margin-left: 20px">SEASON 1</h3>
+
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/KN_HV31bSGs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBqcZLOd58zpPkRoe5ymD7kuvkChA" alt="Prologue" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Prologue</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/04/19 • 2 minutes, 30 seconds</i>
+                        <br>
+                        Ink Sans and Error Sans meet up in the Anti-Void to form a truce. Where both of them are not allowed to Create or Destroy any Alternate Universe. However if the truce is broken, the deal will be off.
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+    
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/CrtVUIpFol4/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA2LOw66G_EKImAa5SzU-bPW7OH2w" alt="0.0" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.0</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/02/06 • 7 minutes, 12 seconds</i>
+                        <br>
+                        Sans encounters an alternate version of himself in a strange dimension. When the other Sans reveals their intentions, a fight ensues, interrupted by Cross!Chara. They steal half of Sans' soul, escaping despite Ink!Sans' intervention, vowing to take his universe.                    
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+    
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/gmepZP0070U/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCJbD9A-I4P3V3mVefo3i4VrOGX8A" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.1</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/02/20 • 24 minutes, 43 seconds</i>
+                        <br>
+                        Cross absorbs half of Sans' soul, gaining power. Ink senses a new AU, a genocide run only Cross and Cross!Chara can sense. Error!Sans' arrival causes conflict, leading them to Sans' universe. Sans, plagued by side effects, seeks his other soul with Ink while Nightmare!Sans guides Cross.
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+    
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/q0VFZpEYgkE/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBwU1MqUrbnYedDv08-Fo2wYNFXVQ" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.2</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/03/14 • 19 minutes, 13 seconds</i>
+                        <br>
+                        Ink and Sans track Cross in Underfell. Cross defeats Underfell!Sans, attempting to control him. Sans confronts Cross, freeing Underfell!Sans temporarily. Cross flees after an attack. Ink is captured, and Underfell!Sans, awakened by Underfell!Papyrus, decides to follow Sans.
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+    
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img id="episode4-image" src="https://i.ytimg.com/vi/QRBOCpuT2r4/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLATrY0utxajDMFQuzIRLKZ-s0ujwg" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+    
+                    <script>
+                        const imageElement = document.getElementById('episode4-image');
+                        const images = [
+                            "https://i.ytimg.com/vi/QRBOCpuT2r4/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLATrY0utxajDMFQuzIRLKZ-s0ujwg",
+                            "https://i.ytimg.com/vi/MA_o7lEs6cc/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLABJLFR5IiBnvEyRHZPscH_EdN4kg"
+                        ];
+                        let currentIndex = 0;
+    
+                        setInterval(() => {
+                            currentIndex = (currentIndex + 1) % images.length;
+                            imageElement.src = images[currentIndex];
+                        }, 1000);
+                    </script>
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.3 <i>[Part 1 + 2]</i></h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/05/23, 2018/08/06 • 47 minutes, 19 seconds</i>
+                        <br>
+                        Cross fails, Nightmare takes him to Swap. X-Event!Chara revives, overwrites Swap, battling Ink and Swap!Sans. Nightmare favors X-Event!Chara. Sans stops him, but Nightmare kills Swap!Chara and leaves. Dream!Sans suggests Outertale, but Swap!Papyrus stays, distrusting Ink, knowing his timeline will vanish.
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+    
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/__T7CqkYKTE/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDK4QCrcNTVutUK40cJw6zkW90BuA" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.4</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/07/29 • 31 minutes, 24 seconds</i>
+                        <br>
+                        XGaster plots multiverse control, opposed by Dream!Sans. Nightmare unleashes X-Event!Chara and Killer!Sans. Error snares Sans and Outer, baiting Ink. Battle ensues, XGaster rebirths, Error imprisoned. XGaster destroys AUs, recruits Cross, as Dream flees with Cross to Omega Timeline.                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+    
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/2ZCnXiB6X-M/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBTqjVXxzKkYvAMjHO_lw-1EvPXvQ" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Epilogue</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2018/08/09 • 55 seconds</i>
+                        <br>
+                        End of the first season.
+                        <br>
+                        <br>
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="season2-episodes" style="display: none;">
+                <h3 style="margin-left: 20px">SEASON 2</h3>
+
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/LFDIF-JFQEo/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAaNPdUveEKgFYaCYrpRVwQk0HEqQ" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Prologue</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2020/06/01 • 4 minutes, 13 seconds</i>
+                        <br>
+                        A Genocide route ends with Sans killing Frisk, resetting the timeline with his memories. Flowey tempts Sans to manipulate reality, which he refuses. XGaster, deemed a failure by Gaster, vows to surpass him.
+
+
+                        <br>
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 60px;">
+                    <img src="https://i.ytimg.com/vi/FygB1WMEzQQ/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAkmoLlNY7jensq5LWQyAYpRZgTew" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.5</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2020/12/16 • 22 minutes, 58 seconds</i>
+                        <br>
+                        XGaster confronts Frisk about the timeline glitch, offering them a place in his plan, which Frisk refuses. The XTale monsters appear, causing chaos and overpowering the Classic monsters. Frisk decides to intervene, receiving support from the others. XGaster welcomes Frisk's resistance.                        
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                    </p>
+                </div>
+
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 80px;">
+                    <img src="https://i.ytimg.com/vi/y3Hs_Cvaneo/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLApt_2KOQLWEeSzrgBHrcGqlOyZCQ" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.6</h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2021/11/12 • 35 minutes, 21 seconds</i>
+                        <br>
+                        Frisk defies XGaster by refusing to OVERWRITE. Cross and Dream arrive in the Omega Timeline and fight Nightmare and Killer. XGaster controls Cross, then leaves. Cross and Dream win. XGaster controls Cross again, visits the Omega Timeline, and sends XUndyne & XPapyrus to Undertale.                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+
+                        <br>
+                    </p>
+                </div>
+
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 80px;">
+                    
+                    <img id="episode0.7-image" src="https://i.ytimg.com/vi/vRpQBcXX2oc/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC9zDxGIJjX0USS_f0OTxl8-hrmAw" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+    
+                    <script>
+                        const episode07ImageElement = document.getElementById('episode0.7-image');
+                        const images07 = [
+                            "https://i.ytimg.com/vi/vRpQBcXX2oc/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC9zDxGIJjX0USS_f0OTxl8-hrmAw",
+                            "https://i.ytimg.com/vi/c_jqIZhACKM/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCFGpGCNjO8ACSyralC0DVjM3X6Mg"
+                        ];
+                        let currentIndex07 = 0;
+
+                        setInterval(() => {
+                        currentIndex07 = (currentIndex07 + 1) % images07.length;
+                        episode07ImageElement.src = images07[currentIndex07];
+                        }, 1000);
+                    </script>
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.7 <i>[Part 1 + 2]</i></h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2022/12/21, 2023/10/28 • 47 minutes</i>
+                        <br>
+                        A broadcast warns of the human army. Undyne fights XTale!Muffet and XTale!Mettaton. Souls are gathered, and XTale!Mettaton initiates "global diffusion," shrouding the world in XGaster's power. Eyes focus on Frisk as past timelines are revealed. Monsters fight back, but XTale!Chara's energy is drained.                        
+                        <br>
+                    </p>
+                </div>
+
+                <div style="background-color: rgba(255, 0, 0, 0); margin-top: -30px; margin-bottom: 80px;">
+                    <img src="https://i.ytimg.com/vi/tpvYmYL-cko/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0MUgPY0l0liqYYFAt5I6yod6O1w" alt="0.1" height="125" width="210" style="box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);  outline: 3px solid white; margin-left: 20px; margin-right: 20px;"> 
+                    <h5 style="margin-top: -135px; margin-left: 250px; text-align: justify;">Underverse 0.8 <i>[Part 1]</i></h5>   
+                    <p style="margin-left: 250px; margin-top: -50px; text-align: justify;">
+                        <i>2024/11/20 • 25 minutes, 50 seconds</i>
+                        <br>
+                        X!Gaster controls the universe. Ink recruits Sans. Cross and X!Chara face X!Gaster. X!Toriel creates a false reality. Toriel confronts X!Toriel, then is killed by X!Asgore. Undyne protects Alphys. X!Gaster impales Frisk, gaining power.                        
+                        <br>
+                        <!-- <a href="https://youtu.be/KN_HV31bSGs?si=orwvTqGbJBiT9_RC" target="_blank"> Watch on Youtube</a> -->
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <p>
+            <br>
+        </p>
+
+        
+       
+        
+    </body>
+</html>
