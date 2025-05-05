@@ -25,37 +25,41 @@
   
     </head>
     <body>
-        <div style="text-align: left; margin-top: -500px; margin-bottom: -30px; background-color: rgba(0, 0, 0, 0.555); outline: 3px solid white; margin-top: 90px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); border-radius: 10px; ">
-        <script>
-            function enterPage(file) {
-            window.location.href = file;
-            }
-        </script>
-        
-        <button 
-        onclick="enterPage('index.html')" 
-        style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
-        onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
-        onmouseout="this.style.outlineColor='white'; this.style.color='white';">
-        Home</button>
-
-        <button 
-        onclick="enterPage('assign2.html')" 
-        style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
-        onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
-        onmouseout="this.style.outlineColor='white'; this.style.color='white';">
-        Episodes</button>
-
-        <p style="margin-top: -5px;">
-            <br>
-        </p>
-        </div>
-        
-
-        <!-- <h1 style="text-align: center; margin-bottom: -30px; margin-top: 40px;"> -->
-            <h1>
+        <h1>
             undeRverse
         </h1>
+        <div style="text-align: left; margin-top: -500px; margin-bottom: -500px; background-color: rgba(0, 0, 0, 0.555); outline: 3px solid white; margin-top: 10px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); border-radius: 10px; ">
+            <script>
+                function enterPage(file) {
+                window.location.href = file;
+                }
+            </script>
+            
+            <button 
+            onclick="enterPage('index.html')" 
+            style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+            onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+            onmouseout="this.style.outlineColor='white'; this.style.color='white';">
+            Home</button>
+    
+            <button 
+            onclick="enterPage('assign2.html')" 
+            style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+            onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+            onmouseout="this.style.outlineColor='white'; this.style.color='white';">
+            Episodes</button>
+    
+            <button 
+            onclick="enterPage('soundtrack.html')" 
+            style="padding: 10px 25px; font-size: 1.5em; cursor: pointer; background-color: rgba(0, 0, 0, 0.555); color: white; outline: 3px solid white; font-family: 'Determination'; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all 0.3s ease; margin-left: 20px; margin-top: 20px;"
+            onmouseover="this.style.outlineColor='yellow'; this.style.color='yellow';"
+            onmouseout="this.style.outlineColor='white'; this.style.color='white';">
+            Soundtrack</button>
+    
+            <p style="margin-top: -5px;">
+                <br>
+            </p>
+            </div>
         <h2 style="margin-bottom: -70px; margin-top: -10px;">
            - EPISODES -
         </h2>
@@ -96,7 +100,6 @@
             </div>
 
             <script>
-                // Initially show Season 1 and hide Season 2
                 document.querySelector('.season1-episodes').style.display = 'block';
                 document.querySelector('.season2-episodes').style.display = 'none';
             </script>
