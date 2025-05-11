@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="tab-icon2.png">
+    <title>Characters - UNDERTALE</title>
+
+    <!-- Functions -->
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <!-- Style -->
+    <style>
+        * {
+            color: white
+        }
+        h1 {
+            font-size: 5em;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+    body {
+        font-family: 'Determination', sans-serif;
+        background-color: black;
+    }
+
+    @font-face {
+        font-family: 'Determination';
+        src: url('../determination.ttf') format('truetype');
+    }
+    nav ul li a {
+        color: rgb(255, 255, 255);
+    }
+
+    nav ul li a:hover {
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <button style="border: none; background: none; cursor: pointer; margin-bottom: 10px" onclick="goToPage('WrapUpHome.html')">
+        <img src="UndertaleLogo.png" alt="Undertale Logo" style="width: 400px; height: auto;">
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav style="background-color: rgb(0, 0, 0); padding: 0.5px; border-radius: 1px; outline: 3px solid white; margin-bottom: 20px">
+        <ul style="list-style: none; display: flex; gap: 40px;">
+            <li><a href="WrapUpHome.html" style="text-decoration: none; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size: 20px;">Home</a></li>
+            <li><a href="WrapUp2.html" style="text-decoration: none; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size: 20px;">Story</a></li>
+            <li><a href="WrapUp3.html" style="text-decoration: none; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size: 20px;">Routes</a></li>
+            <li><a href="WrapUp4.html" style="text-decoration: none; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size: 20px;">Characters</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <div style="align-content: center; text-align: center; margin-bottom: 10px">
+        <h1 style="margin-left:30%; margin-top: 95px; position: absolute; color: white; text-shadow: 4px 4px 8px black; font-weight: bold; z-index: 99999;">Characters</h1>
+        <div style="background-image: url('https://i1.sndcdn.com/artworks-jOWa12ElcEObkgIr-n6yeUQ-t500x500.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 20px; filter: blur(3px);"></div>
+    </div>
+
+    <!-- Page Content -->
+     <h2 style="margin-bottom: -10px">Header</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id dignissim libero, nec consequat ante. Pellentesque egestas eros at magna molestie rhoncus vitae ut nibh. Nulla at elementum dui. In vitae est tempus, fermentum turpis at, tristique orci. Ut massa nulla, tristique sed velit sed, imperdiet accumsan augue. Praesent sem dolor, ullamcorper at iaculis elementum, porta ac nibh. Curabitur rhoncus egestas metus id pharetra. Maecenas sollicitudin congue commodo. Aenean in quam leo. Nam eget erat mauris. Nulla mattis mi ac sem posuere, vel auctor enim feugiat. Pellentesque eu ex at sem ornare bibendum id ac nisi. Sed sit amet vehicula odio, quis varius tortor.</p>
+</body>
+</html>
